@@ -1,5 +1,0 @@
-!/.gitignore
-dist/**
-languages/**
-!/languages/pt_BR.po
-node_modules/**
