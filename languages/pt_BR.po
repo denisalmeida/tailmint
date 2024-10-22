@@ -1,8 +1,0 @@
-msgid "Related posts"
-msgstr "Posts relacionados"
-
-msgid "Content not found"
-msgstr "Conteudo não encontrado"
-
-msgid "Back to home"
-msgstr "Voltar para a home"
