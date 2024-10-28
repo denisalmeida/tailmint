@@ -11,8 +11,10 @@
 
 "use strict";
 
+import Notification from './components/notification.js';
 import menuToggle from './components/menuToggle.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+    new Notification();
     new menuToggle();
 });
