@@ -24,7 +24,7 @@
                     <?php endif ?>
                 </a>
             </div>
-            <button id="primary-menu-toggle" class="inline-flex items-center text-sm ml-4 rounded-lg md:hidden sm:ml-auto" type="button">
+            <button id="menu-toggle" class="inline-flex items-center text-sm ml-4 rounded-lg md:hidden sm:ml-auto" type="button">
                 <svg class="w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                 </svg>
@@ -32,7 +32,7 @@
             <?php
 				wp_nav_menu(
 					array(
-						'container_id'    => 'primary-menu',
+						'container_id'    => 'main-menu',
 						'container_class' => 'md:ml-auto sm:hidden md:block',
 						'menu_class'      => 'flex sm:flex-col sm:gap-3 md:gap-10 md:flex-row',
 						'theme_location'  => 'primary',

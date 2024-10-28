@@ -1,17 +1,18 @@
-// Navigation toggle
-window.addEventListener('load', function () {
-    let main_navigation = document.querySelector('#primary-menu');
-    document.querySelector('#primary-menu-toggle').addEventListener('click', function (e) {
-        e.preventDefault();
-        main_navigation.classList.add('mobile-nav');
-        main_navigation.classList.toggle('sm:hidden');
-    });
-    window.addEventListener('resize', function () {
-        let currentWidth = window.innerWidth;
-        if (currentWidth >= 768) {
-            main_navigation.classList.remove('w-full', 'mobile-nav');
-        } else {
-            main_navigation.classList.add('w-full', 'mobile-nav');
-        }
-    });
+/**
+ *
+ * Main JavaScript theme file.
+ * This file initializes all components when the DOM is fully loaded.
+ *
+ * @package   Tailmint
+ * @author    Denis Almeida
+ * @link      https://github.com/denisalmeida
+ *
+ * */
+
+"use strict";
+
+import menuToggle from './components/menuToggle.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+    new menuToggle();
 });
